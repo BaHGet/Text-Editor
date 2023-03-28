@@ -13,7 +13,7 @@ const onChange =  () =>{
     if(text ===""){
         wordsNum = 0;
     }else{
-        wordsNum = text.split(' ').length;
+        wordsNum =text.trim().split(/\s+/).length;
     }
     words.dataset.content = wordsNum
     chars.dataset.content = charNum
